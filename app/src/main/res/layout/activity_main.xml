@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/Apple_checkBox"
+            android:layout_width="110px"
+            android:layout_height="wrap_content"
+            android:text="@string/Apple" />
+
+        <EditText
+            android:id="@+id/Apple_text"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/apple_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/Strawberry_checkBox"
+            android:layout_width="110px"
+            android:layout_height="wrap_content"
+            android:text="@string/Strawberry" />
+
+        <EditText
+            android:id="@+id/Straw_text"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Straw_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/Blueberry_checkBox"
+            android:layout_width="110px"
+            android:layout_height="wrap_content"
+            android:text="@string/Blueberry" />
+
+        <EditText
+            android:id="@+id/Blue_text"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Blue_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/Potatoes_checkBox"
+            android:layout_width="110px"
+            android:layout_height="wrap_content"
+            android:text="@string/Potatoes" />
+
+        <EditText
+            android:id="@+id/POtato_text"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/Potatoes_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cal_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Oncal"
+            android:text="@string/Calculate" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/Window"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Window" />
+
+            <RadioButton
+                android:id="@+id/Toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Toast" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>
